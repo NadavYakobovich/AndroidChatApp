@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".AddNewContactsActivity">
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        tools:ignore="MissingConstraints">-->
+
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="216dp"-->
+    <!--            android:layout_marginTop="20dp"-->
+    <!--            android:src="@drawable/chat_app_logo" />-->
+
+    <!--        <androidx.cardview.widget.CardView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginHorizontal="25dp"-->
+    <!--            android:padding="6dp"-->
+    <!--            app:cardBackgroundColor="#3E61CD">-->
+
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginHorizontal="30dp"-->
+    <!--                android:backgroundTintMode="add"-->
+    <!--                android:gravity="center">-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center_vertical"-->
+    <!--                    android:padding="10dp"-->
+    <!--                    android:text="Add new Contact"-->
+    <!--                    android:textColor="#E1F5FE"-->
+    <!--                    android:textStyle="bold" />-->
+    <!--            </RelativeLayout>-->
+
+    <!--        </androidx.cardview.widget.CardView>-->
+
+    <!--        <androidx.cardview.widget.CardView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginHorizontal="30dp"-->
+    <!--            android:layout_marginBottom="10dp"-->
+    <!--            android:padding="6dp">-->
+
+    <!--            &lt;!&ndash;            the tag layout&ndash;&gt;-->
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:orientation="horizontal"-->
+    <!--                android:padding="8dp">-->
+
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:orientation="vertical">-->
+
+
+    <!--                        &lt;!&ndash;                the user Name&ndash;&gt;-->
+
+    <!--                        <EditText-->
+    <!--                            android:id="@+id/addUser_username"-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:hint=" UserName" />-->
+
+
+    <!--                    &lt;!&ndash;                the nickname&ndash;&gt;-->
+
+    <!--                    <EditText-->
+    <!--                        android:id="@+id/addUser_nickname"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:hint=" Nick Name" />-->
+
+    <!--                    &lt;!&ndash;the server&ndash;&gt;-->
+
+    <!--                    <EditText-->
+    <!--                        android:id="@+id/addUser_server"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:hint=" Contact Server" />-->
+
+    <!--                    &lt;!&ndash;the pic&ndash;&gt;-->
+
+    <!--                    <EditText-->
+    <!--                        android:id="@+id/addUser_Pic"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:hint=" Pic" />-->
+
+    <!--                </LinearLayout>-->
+
+
+    <!--            </RelativeLayout>-->
+
+    <!--        </androidx.cardview.widget.CardView>-->
+
+    <!--        &lt;!&ndash;                the send Btn&ndash;&gt;-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/addUser_sendbtn"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            app:cardCornerRadius="18dp"-->
+    <!--            app:cardElevation="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginHorizontal="30dp"-->
+    <!--            android:text="send" />-->
+
+    <!--    </LinearLayout>-->
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/login_backgroundDesc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/AddUser_llCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:id="@+id/addUser_llLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+
+                <ImageView
+                    android:id="@+id/addUser_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/login_logoDesc"
+                    android:maxWidth="80dp"
+                    android:maxHeight="80dp"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/addfriendiconnew" />
+
+                <TextView
+                    android:id="@+id/addUser_logoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Add new Friend"
+                    android:textSize="34sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addUser_llMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="32dp"
+                android:orientation="vertical"
+                android:paddingStart="35dp"
+                android:paddingEnd="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="@string/login_usernameIconDesc"
+                        android:src="@drawable/ic_adduser" />
+
+                    <EditText
+                        android:id="@+id/addUser_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:autofillHints="username"
+                        android:hint="@string/login_etUsername"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="NickNameIcon"
+                        android:src="@drawable/ic_nickname" />
+
+                    <EditText
+                        android:id="@+id/addUser_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:autofillHints="password"
+                        android:hint="NickName"
+                        android:imeOptions="actionGo"
+                        android:inputType="text"
+                        android:minHeight="48dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="serverIcon"
+                        android:src="@drawable/ic_changserver" />
+
+                    <EditText
+                        android:id="@+id/addUser_server"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:autofillHints="password"
+                        android:hint="Server"
+                        android:imeOptions="actionGo"
+                        android:inputType="text"
+                        android:minHeight="48dp" />
+
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/addUser_sendbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/logoPrimary"
+                    android:ems="15"
+                    android:text="send"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
